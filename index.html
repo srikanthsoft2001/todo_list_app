@@ -9,14 +9,14 @@
   <body>
     <!-- Input Field & Add Button
     
-    
-    Each task appears as a list item with a checkbox and delete button.
-    Mark Task as Completed
-    
-    Checkbox to mark tasks as completed (strikethrough effect).
-    Task Filters
-    
-    Show All, Pending, and Completed tasks.
+        
+        Each task appears as a list item with a checkbox and delete button.
+        Mark Task as Completed
+        
+        Checkbox to mark tasks as completed (strikethrough effect).
+        Task Filters
+        
+        Show All, Pending, and Completed tasks.
         Task Editing
         
         Option to edit a task by clicking on it.
@@ -38,7 +38,16 @@
         <input type="text" placeholder="add a task" class="input-task" />
         <button class="add-task-btn" onclick="add_task()">Add Task</button>
       </div>
+
       <div class="task-list-container">
+        <div class="filter-container">
+            <select id="filter-tasks">
+              <option value="all">Show All</option>
+              <option value="pending">Pending</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+          
         <ul class="task-list"></ul>
       </div>
     </div>
