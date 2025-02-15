@@ -4,26 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List Application</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--     
-    ----------------------------------
-    |         📌 To-Do List           |  <- Title
-     ----------------------------------
-    | [ Add a new task... ]  (+)      |  <- Input box & Add button
-     ----------------------------------
-    | ✅ Task 1       (🗑)            |  <- Task list items
-    | ⬜ Task 2       (🗑)            |  
-    | ⬜ Task 3       (🗑)            |  
-     ----------------------------------
-    | [All]  [Pending]  [Completed]   |  <- Filter buttons
-     ----------------------------------
-     -->
-
-    <div class="todo_List_box">
-      <div class="heading">
+    <!-- Input Field & Add Button
+    
+    
+    Each task appears as a list item with a checkbox and delete button.
+    Mark Task as Completed
+    
+    Checkbox to mark tasks as completed (strikethrough effect).
+    Task Filters
+    
+    Show All, Pending, and Completed tasks.
+        Task Editing
+        
+        Option to edit a task by clicking on it.
+        Task Counter
+        
+        Displays the total tasks and pending tasks.
+        Dark Mode Toggle
+        
+        Switch between light and dark themes.
+        Save Tasks in Local Storage
+        
+        Keep tasks saved even after a page refresh.
+        -->
+    <div class="todo-container">
+      <div class="todo-header">
         <h1>To-Do List</h1>
       </div>
+      <div class="task-input-container">
+        <input type="text" placeholder="add a task" class="input-task" />
+        <button class="add-task-btn" onclick="add_task()">Add Task</button>
+      </div>
+      <div class="task-list-container">
+        <ul class="task-list"></ul>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
